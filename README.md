@@ -51,13 +51,14 @@ Option 1, is the best apporach for instances where the whole organisation is usi
 18. Define the following values:
 -- Install Command: %windir%\SysNative\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -file install.ps1 -Mode Install
 -- Uninstall command: %windir%\SysNative\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -file uninstall.ps1 -Mode Install
-
-*** It's important to note, for this installation to work powershell needs to run as 64bit, otherwise by default intune will run in 32bit context for 32bit apps and the registry keys will be saved in the wrong place, to achive this the "%windir%\SysNative\WindowsPowerShell\v1.0\powershell.exe" is very important ***
-
 -- Installation time required (mins): 5
 -- Allow available uninstall: No
 -- Install behavior: System
 -- Device restart behavior: Determine behavior based on return codes
+
+It's important to note, for this installation to work powershell needs to run as 64bit, otherwise by default intune will run in 32bit context for 32bit apps and the registry keys will be saved in the wrong place, to achive this the "%windir%\SysNative\WindowsPowerShell\v1.0\powershell.exe" is very important
+
+
 20. Select next
 21. Define the following values:
 -- Operating system architecture: x86,x64
