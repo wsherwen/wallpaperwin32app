@@ -47,8 +47,8 @@ Option 1, is the best apporach for instances where the whole organisation is usi
 -- Description: Background & Lockscreen branding deployment application.
 -- Publisher: Warren Sherwen
 -- App Verison: 1.0 (increase by one, for each new package update) - this is important, so the app can run the uninstall and install commands correctly to apply any new updates.
-17. Select next
-18. Define the following values:
+18. Select next
+19. Define the following values:
 -- Install Command: %windir%\SysNative\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -file install.ps1 -Mode Install
 -- Uninstall command: %windir%\SysNative\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Bypass -file uninstall.ps1 -Mode Install
 -- Installation time required (mins): 5
@@ -64,13 +64,13 @@ It's important to note, for this installation to work powershell needs to run as
 -- Operating system architecture: x86,x64
 -- Minimum operating system: Windows 10 1607
 -- Disk space required (MB): 10MB
-22. Select next
-23. Define the following values:
+23. Select next
+24. Define the following values:
 -- Rules format use a custom detection script
 -- upload the check.ps1 file from the C:\Win32Apps\Wallpaper\ location.
-24. Select next
-25. Define the scope for delivery to All Devices (or amend to your requirements)
-26. Review and finish
+26. Select next
+27. Define the scope for delivery to All Devices (or amend to your requirements)
+28. Review and finish
 
 Note, where you have unique brands per team or department, I recommend changing the below values to something unique per team:
 $WallpaperImage = "Desktop.jpg"
